@@ -1,0 +1,344 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+	background-color: #cad8ef;
+	padding: 15px;
+	margin-bottom: 8px;
+	text-align: left;
+	color: #04357c;
+	border: 1px solid #686868;
+}
+
+header .logo{
+	border: 1px solid darkgray;
+	position: absolute;
+	top: 41px;
+	right:25px;
+
+}
+
+/* Container for flexboxes */
+.content-wrapper {
+	display: -webkit-flex;
+	display: flex;
+	background-color: #fefce2;
+	border: 1px solid #686868;
+}
+
+.main {
+	/*background-color: azure;*/
+	float: left;
+	width: 50%;
+	padding: 20px;
+
+}
+
+/*Robot body START*/
+.robot_parts{
+
+	
+	display: block;
+	background-color: #fff;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	max-height:420px;
+	padding: 10px;
+	
+
+}
+
+.head {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 350px;
+}
+
+.leye {
+  height: 10px;
+  width: 10px;
+  background-color: lightblue;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 370px;
+  top: 50px;
+}
+
+.reye {
+  height: 10px;
+  width: 10px;
+  background-color: lightblue;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 420px;
+  top: 50px;
+}
+
+.mouth {
+  height: 5px;
+  width: 40px;
+  background-color: pink;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 380px;
+  top: 90px;
+}
+
+.body {
+	border-bottom: 100px solid #e96126;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	height: 0px;
+	width: 100px;
+    transform: rotate(180deg); 
+	position: absolute;
+    left: 350px;
+    top: 110px;
+}
+
+.lhand {
+  height: 100px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10%;
+  position: absolute;
+  left: 330px;
+  top: 120px;
+
+}
+
+.rhand {
+  height: 100px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10%;
+  position: absolute;
+  left: 445px;
+  top: 120px;
+
+}
+
+.lleg {
+  height: 100px;
+  width: 25px;
+  background-color: #ededed;
+  border: 1px solid #000;
+  border-radius: 10%;
+  position: absolute;
+  left: 375px;
+  top: 210px;
+
+}
+
+.rleg {
+  height: 100px;
+  width: 25px;
+  background-color: #ededed;
+  border: 1px solid #000;
+  border-radius: 10%;
+  position: absolute;
+  left: 405px;
+  top: 210px;
+
+}
+
+/*Robot body END*/
+
+.right {
+	background-color: #e5e5e5;
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+
+span {
+
+	display: flex;
+	border: 1px solid black;
+	background-color: white;
+	text-align:left;
+	padding:10px;
+	margin: 0 0 10px 0;
+
+}
+
+span p{
+
+overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
+
+span.frst {
+
+	margin-right: 3%;
+
+}
+
+span.scd{
+
+	margin-right: 6%;
+	text-align: justify;
+
+}
+
+span.thrd {
+
+	margin-right: 9%;
+
+}
+
+span.thrd img {
+
+	position: relative;
+	width: 60px;
+	height: 40px;
+	top: 15px;
+	margin-right: 5px;
+
+}
+
+.create_robot{
+
+	background-color: #e1eed8;
+	margin: 10px 0;
+	padding: 10px 0;
+	border: 1px solid #686868;
+}
+
+.create_robot h2{
+	
+	text-align: center;
+}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Style inputs */
+input[type=text],
+input[type="color"],  
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+select {
+	background-color: #fff;
+}
+
+/* Style the submit button */
+input[type=button], button {
+
+  background-color: #04357c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover, input[type="button"]:hover{
+
+	background-color: #a3b3cd;
+}
+
+label {
+	display: block;
+}
+
+fieldset {
+
+	color: #1a1a1a;
+	border: none; 
+	margin: 0 0 10px 0;
+	padding: 8px 0 16px;
+	box-shadow: none;
+	width: 100%;
+}
+
+fieldset legend {
+	
+	color: #1a1a1a;
+	border: none; 
+	margin: 8px 0 0;
+	padding: 0 8px;
+	box-shadow: none;
+	font-weight: bold;
+}
+
+.row {
+	display: flex;
+	flex-flow: row;
+}
+
+.row .col {
+	flex-grow: 1;
+	width: 50%;
+	padding: 0 8px;
+}
+
+.row .one {
+	order: 1;
+}
+
+.row .two {
+	order: 2;
+}
+
+.row .three {
+	order: 3;
+}
+
+.row .four {
+	order: 4;
+}
+
+.row .five {
+	order: 5;
+}
+
+
+@media (max-width: 600px) {
+  .content-wrapper {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .main, .right {
+    width: 100%;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

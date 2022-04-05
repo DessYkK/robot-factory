@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Robot Factory</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<header>
+  <h1>Robot Factory</h1>
+  <a href="https://www.playtech.com/" ><img class="logo" src="PTWebAcademy_logotype.jpg" alt="Logo" width='150px' height='auto'></a>
+</header>
+
+<section id='slide-1' class='factory-section'>
+
+	<div class='content-wrapper'>
+		<div class="main">
+			<h2>Basic robot</h2>
+			
+			<div class="robot_parts">
+				<div class="head"> </div>
+				<div class="leye"> </div>
+				<div class="reye"> </div>
+				<div class="mouth"> </div>
+				<div class="body"> </div>
+				<div class="lhand"> </div>
+				<div class="rhand"> </div>
+				<div class="lleg"> </div>
+				<div class="rleg"> </div>
+			</div>
+
+			<h3>Robot name</h3>
+		</div>
+	  
+		<div class="right">
+			<span class="frst"><p><strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo ligula orci, a cursus tortor laoreet at. Ut dignissim felis et nulla congue imperdiet non vel ipsum. Duis ac risus sed ante placerat varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></span>
+			<span class="scd"><p><i>Lorem ipsum</i> dolor sit amet, consectetur adipiscing elit. Vestibulum commodo ligula orci, a cursus tortor laoreet at. Ut dignissim felis et nulla congue imperdiet non vel ipsum. Duis ac risus sed ante placerat varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></span>
+			<span class="thrd">
+				<img src="good_luck.png" alt="Good Luck">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo ligula orci, a cursus tortor laoreet at. Ut dignissim felis et nulla congue imperdiet non vel ipsum. Duis ac risus sed ante placerat varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+			</span>
+		</div>
+	</div>
+	
+	<div class='create_robot'>
+		<h2>Create robot</h2>
+		<hr>
+		
+		<form class="form-inline">
+			
+			<fieldset>
+				<legend>Robot settings</legend>
+				<div class="row">
+					<div class="col one">
+						<label for="text">Name:</label><input type="text" id="text" placeholder="Robot name" name="text">
+					</div>
+					<div class="col two">
+						<label>Select type:</label>
+						<select>
+							<option>Basic Robot</option>
+							<option>Small Robot</option>
+							<option>...</option>
+						</select>
+					</div>
+					<div class="col three">
+						<label>Select color:</label><input type="color" value="#e96126">
+					</div>
+					<div class="col four">
+						<label>Select options:</label>
+						<label><input type="checkbox" name="action1" value="jump" checked="" />can jump</label>
+						<label><input type="checkbox" name="action2" value="talk" />can talk</label>
+						<label><input type="checkbox" name="action3" value="blink" />can blink</label>
+					</div>
+					<div class="col five">
+						<label>Write Comments:</label>
+						<textarea name="message">Lorem ipsum dolor sit amet.</textarea>
+					</div>
+				</div>
+			</fieldset>
+			
+			<input type="button" value='Create'>
+			<input type="button" value='Show Created Robots'>
+			
+		</form>
+		<hr>
+	</div>
+</section>
+
+</body>
+</html>
